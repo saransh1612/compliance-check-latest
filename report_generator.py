@@ -120,7 +120,7 @@ def generate_html_report(
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BPCL LPG Packed Truck Compliance Certificate - {truck_no}</title>
+    <title>Packed truck Compliance certificate - {truck_no}</title>
     <style>
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -344,7 +344,7 @@ def generate_html_report(
         <div class="header">
             <div class="header-title">
                 <h1>Bharat Petroleum Corporation Limited</h1>
-                <h2>LPG Packed Truck Compliance & Safety Inspection Certificate</h2>
+                <h2>Packed truck Compliance certificate</h2>
             </div>
             <div class="stamp-box">
                 {status_title.split('—')[0].strip()}<br>
@@ -484,26 +484,22 @@ def generate_html_report(
             </tbody>
         </table>
 
-        <div class="footer-signatures">
+                <div class="footer-signatures">
             <div class="sig-block">
                 <div class="sig-line"></div>
-                <strong style="font-size:14px; color:#0f172a;">Driver</strong><br>
-                <span style="color:#64748b; font-size:11px;">(गाड़ी चालक / চালক)</span>
+                <strong style="font-size:14px; color:#0f172a;">PCVO crew</strong>
             </div>
             <div class="sig-block">
                 <div class="sig-line"></div>
-                <strong style="font-size:14px; color:#0f172a;">Inspector</strong><br>
-                <span style="color:#64748b; font-size:11px;">(निरीक्षक / পরিদর্শক)</span>
+                <strong style="font-size:14px; color:#0f172a;">Security Guard</strong>
             </div>
             <div class="sig-block">
                 <div class="sig-line"></div>
-                <strong style="font-size:14px; color:#0f172a;">Officer</strong><br>
-                <span style="color:#64748b; font-size:11px;">(अधिकारी / কর্মকর্তা)</span>
+                <strong style="font-size:14px; color:#0f172a;">Officer</strong>
             </div>
             <div class="sig-block">
                 <div class="sig-line"></div>
-                <strong style="font-size:14px; color:#0f172a;">Munshi</strong><br>
-                <span style="color:#64748b; font-size:11px;">(मुंशी / মুন্সী)</span>
+                <strong style="font-size:14px; color:#0f172a;">Transport/Transport Representative</strong>
             </div>
         </div>
     </div>

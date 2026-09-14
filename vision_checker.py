@@ -182,7 +182,6 @@ CRITICAL INSPECTION & DETECTION REQUIREMENTS:
      * F2: "Bharat Petroleum" front logo below windshield (160x1300mm).
      * F3: Class 2 Flammable Gas red diamond (250x250mm) on front bumper/grill.
      * F4: Standard BPCL blue & white cabin finish in good repair.
-     * F5: Legible front registration number plate.
      * F6_UNAUTHORIZED_MARKINGS: Check for ANY unauthorized text, religious symbols (e.g. Om, Swastika, Cross), private slogans, mobile numbers, or unapproved decals on windshield or front cabin.
    - Left Side (Helper Side):
      * L1: "Bharatgas" sticker on helper cabin door (200x600mm) with tagline "COOK FOOD. SERVE LOVE.".
@@ -199,10 +198,12 @@ CRITICAL INSPECTION & DETECTION REQUIREMENTS:
    - Rear / Back View (STRICT FULL DETECTION & OCR):
      * B1: 3rd Emergency Information Panel (EIP, 800x600mm) cladded onto rear mesh gate with exact statutory text.
      * B2: Class 2 Flammable Gas diamond (250x250mm) and red/white reflective tape across rear under-run protection bumper.
-     * B3: Rear registration plate with functioning lamp.
      * B4: Rear gate mesh and locking latch.
      * B5_REAR_ALL_TEXT_AUDIT: Perform complete OCR and list EVERYTHING written, painted, or mounted on the rear view. Transcribe all words, numbers, and signs.
      * B6_UNAUTHORIZED_MARKINGS: Actively check for any non-BPCL slogans (e.g. "Horn OK Please", "Buri Nazar...", "Keep Distance", "Use Dipper At Night"), religious symbols, private phone numbers, or unapproved decals on rear gate or bumper. If present, flag as non-compliant!
+
+NOTE ON REGISTRATION PLATE:
+Do NOT evaluate or flag the vehicle registration number plate as an error or defect. Omit registration number plate checks from audit defects.
 
 2. DETECTION OF UNAUTHORIZED / EXTRA MARKINGS ACROSS ALL SIDES:
    In F6, L5, R5, and B6, state clearly what extraneous text, slogans, or symbols (if any) were seen, or confirm surface is clean and compliant.
@@ -222,7 +223,7 @@ Return your response strictly as valid JSON matching this schema:
   }},
   "front_checks": [
     {{
-      "id": "<rule id: F1_GOODS_CARRIER, F2_BP_FRONT_LOGO, F3_FRONT_CLASS_LABEL, F4_CABIN_LIVERY, F5_FRONT_NUMBER_PLATE, F6_UNAUTHORIZED_MARKINGS>",
+      "id": "<rule id: F1_GOODS_CARRIER, F2_BP_FRONT_LOGO, F3_FRONT_CLASS_LABEL, F4_CABIN_LIVERY, F6_UNAUTHORIZED_MARKINGS>",
       "name": "<rule name>",
       "status": "PASS" | "FAIL" | "WARNING",
       "confidence": <float 0.0 to 1.0>,
@@ -341,14 +342,6 @@ def generate_simulated_audit(scenario: str = "compliant") -> Dict[str, Any]:
                     "corrective_action": "None required"
                 },
                 {
-                    "id": "F5_FRONT_NUMBER_PLATE",
-                    "name": "Registration Number Plate (Front)",
-                    "status": "PASS",
-                    "confidence": 0.99,
-                    "observation": "Front registration number plate clearly legible and secure.",
-                    "corrective_action": "None required"
-                },
-                {
                     "id": "F6_UNAUTHORIZED_MARKINGS",
                     "name": "Extraneous / Unauthorized Signs, Symbols & Markings (Front)",
                     "status": "PASS",
@@ -459,14 +452,6 @@ def generate_simulated_audit(scenario: str = "compliant") -> Dict[str, Any]:
                     "corrective_action": "None required"
                 },
                 {
-                    "id": "B3_REAR_NUMBER_PLATE",
-                    "name": "Rear Vehicle Registration Plate",
-                    "status": "PASS",
-                    "confidence": 0.98,
-                    "observation": "Rear license plate legible and properly mounted.",
-                    "corrective_action": "None required"
-                },
-                {
                     "id": "B4_REAR_GATE_LOCKING",
                     "name": "Rear Gate Mesh & Locking Latches",
                     "status": "PASS",
@@ -547,14 +532,6 @@ def generate_simulated_audit(scenario: str = "compliant") -> Dict[str, Any]:
                     "status": "PASS",
                     "confidence": 0.90,
                     "observation": "Standard blue/white paint visible.",
-                    "corrective_action": "None"
-                },
-                {
-                    "id": "F5_FRONT_NUMBER_PLATE",
-                    "name": "Registration Number Plate (Front)",
-                    "status": "PASS",
-                    "confidence": 0.96,
-                    "observation": "Front plate legible.",
                     "corrective_action": "None"
                 },
                 {
@@ -666,14 +643,6 @@ def generate_simulated_audit(scenario: str = "compliant") -> Dict[str, Any]:
                     "confidence": 0.88,
                     "observation": "Reflective warning tape on rear bumper is partially faded and missing on right corner.",
                     "corrective_action": "Affix new high-intensity reflective tape."
-                },
-                {
-                    "id": "B3_REAR_NUMBER_PLATE",
-                    "name": "Rear Vehicle Registration Plate",
-                    "status": "PASS",
-                    "confidence": 0.96,
-                    "observation": "Rear number plate visible.",
-                    "corrective_action": "None"
                 },
                 {
                     "id": "B4_REAR_GATE_LOCKING",

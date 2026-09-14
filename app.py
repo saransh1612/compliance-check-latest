@@ -121,11 +121,11 @@ st.markdown(f"""
 
 # Sidebar Configuration
 st.sidebar.markdown(f"### 📋 {get_ui_text('quick_audit', lang)}")
-truck_no = st.sidebar.text_input(get_ui_text("truck_no", lang), value="MH 12 BP 1075")
+truck_no = st.sidebar.text_input(get_ui_text("truck_no", lang), value="")
 truck_capacity = st.sidebar.selectbox(get_ui_text("truck_cap", lang), ["306 Cylinders", "450 Cylinders"])
-plant_name = st.sidebar.text_input(get_ui_text("plant_name", lang), value="BPCL Uran LPG Plant")
-transporter_name = st.sidebar.text_input(get_ui_text("transporter", lang), value="Mahalaxmi Transport Corp")
-auditor_name = st.sidebar.text_input(get_ui_text("auditor", lang), value="Inspector R. K. Sharma")
+plant_name = st.sidebar.text_input(get_ui_text("plant_name", lang), value="")
+transporter_name = st.sidebar.text_input(get_ui_text("transporter", lang), value="")
+auditor_name = st.sidebar.text_input(get_ui_text("auditor", lang), value="")
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### ⚙️ Inspection Engine")

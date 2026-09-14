@@ -77,14 +77,6 @@ COMPLIANCE_CHECKLIST: Dict[str, List[Dict[str, Any]]] = {
             "element": "Cabin Livery"
         },
         {
-            "id": "F5_FRONT_NUMBER_PLATE",
-            "name": "Registration Number Plate (Front)",
-            "spec": "Official high security / legible vehicle registration number plate mounted securely on front bumper per MV Act.",
-            "critical": True,
-            "keywords": [],
-            "element": "Front License Plate"
-        },
-        {
             "id": "F6_UNAUTHORIZED_MARKINGS",
             "name": "Extraneous / Unauthorized Signs, Symbols & Markings (Front)",
             "spec": "Strictly NO unauthorized text, religious symbols, private slogans, mobile numbers, or unapproved stickers permitted on windshield, front cabin, or grill per BPCL fleet guidelines. Only official BPCL branding and statutory labels allowed.",
@@ -193,14 +185,6 @@ COMPLIANCE_CHECKLIST: Dict[str, List[Dict[str, Any]]] = {
             "critical": True,
             "keywords": ["2"],
             "element": "Rear Safety Diamond & Reflectors"
-        },
-        {
-            "id": "B3_REAR_NUMBER_PLATE",
-            "name": "Rear Vehicle Registration Plate",
-            "spec": "Clearly legible registration plate affixed on rear bumper with functioning illumination lamp.",
-            "critical": True,
-            "keywords": [],
-            "element": "Rear License Plate"
         },
         {
             "id": "B4_REAR_GATE_LOCKING",
