@@ -487,13 +487,13 @@ def generate_html_report(
         <div class="footer-signatures">
             <div class="sig-block">
                 <div class="sig-line"></div>
-                <strong style="font-size:14px; color:#0f172a;">Driver</strong><br>
-                <span style="color:#64748b; font-size:11px;">(गाड़ी चालक / চালক)</span>
+                <strong style="font-size:14px; color:#0f172a;">PCVO Crew</strong><br>
+                <span style="color:#64748b; font-size:11px;">(पीसीवीओ क्रू / পিসিভিও ক্রু)</span>
             </div>
             <div class="sig-block">
                 <div class="sig-line"></div>
-                <strong style="font-size:14px; color:#0f172a;">Inspector</strong><br>
-                <span style="color:#64748b; font-size:11px;">(निरीक्षक / পরিদর্শক)</span>
+                <strong style="font-size:14px; color:#0f172a;">Security Guard</strong><br>
+                <span style="color:#64748b; font-size:11px;">(सुरक्षा गार्ड / সিকিউরিটি গার্ড)</span>
             </div>
             <div class="sig-block">
                 <div class="sig-line"></div>
@@ -502,8 +502,8 @@ def generate_html_report(
             </div>
             <div class="sig-block">
                 <div class="sig-line"></div>
-                <strong style="font-size:14px; color:#0f172a;">Munshi</strong><br>
-                <span style="color:#64748b; font-size:11px;">(मुंशी / মুন্সী)</span>
+                <strong style="font-size:14px; color:#0f172a;">Transport / Transport Representative</strong><br>
+                <span style="color:#64748b; font-size:11px;">(परिवहन / परिवहन प्रतिनिधि | পরিবহন / পরিবহন প্রতিনিধি)</span>
             </div>
         </div>
     </div>
