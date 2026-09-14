@@ -20,7 +20,7 @@ def load_and_fix_orientation(file_obj):
 
 # Set page config
 st.set_page_config(
-    page_title="BPCL LPG Truck Compliance Audit",
+    page_title="VM Compliance Checker",
     page_icon="🚛",
     layout="wide",
     initial_sidebar_state="expanded"

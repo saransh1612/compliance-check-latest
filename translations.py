@@ -8,7 +8,7 @@ from typing import Dict, Any
 # UI Text Dictionary
 UI_TEXT: Dict[str, Dict[str, str]] = {
     "en": {
-        "app_title": "BPCL LPG Packed Truck Compliance Checker",
+        "app_title": "VM Compliance Checker",
         "app_subtitle": "Bharat Petroleum / Bharatgas 306 & 450 Cylinders Truck Inspection Portal",
         "select_lang": "Language",
         "quick_audit": "Quick Inspection Setup",
@@ -70,7 +70,7 @@ UI_TEXT: Dict[str, Dict[str, str]] = {
         "remediation_label": "Fix Action:"
     },
     "hi": {
-        "app_title": "बीपीसीएल एलपीजी पैक्ड ट्रक अनुपालन जांच (Compliance Checker)",
+        "app_title": "VM Compliance Checker",
         "app_subtitle": "भारत पेट्रोलियम / भारतगैस 306 एवं 450 सिलेंडर ट्रक निरीक्षण पोर्टल",
         "select_lang": "भाषा चुनें",
         "quick_audit": "निरीक्षण विवरण भरें",
@@ -132,7 +132,7 @@ UI_TEXT: Dict[str, Dict[str, str]] = {
         "remediation_label": "ठीक करने का उपाय:"
     },
     "bn": {
-        "app_title": "বিপিসিএল এলপিজি প্যাকড ট্রাক সম্মতি যাচাই (Compliance Checker)",
+        "app_title": "VM Compliance Checker",
         "app_subtitle": "ভারত পেট্রোলিয়াম / ভারতগ্যাস ৩০৬ ও ৪৫০ সিলিন্ডার ট্রাক পরিদর্শন পোর্টাল",
         "select_lang": "ভাষা নির্বাচন করুন",
         "quick_audit": "পরিদর্শন বিবরণ দিন",
