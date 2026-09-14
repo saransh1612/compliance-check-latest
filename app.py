@@ -108,7 +108,7 @@ st.markdown(f"""
 <div class="main-header">
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
         <div>
-            <h1>🚛 {get_ui_text('app_title', lang)}</h1>
+            <h1>🚛 VM Compliance Checker</h1>
             <p>{get_ui_text('app_subtitle', lang)}</p>
         </div>
         <div style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.3); text-align: right;">
